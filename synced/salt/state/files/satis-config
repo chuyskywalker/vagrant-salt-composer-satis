@@ -10,7 +10,7 @@
     "require": {
         "psr/log": "1.0.0",
         "swiftmailer/swiftmailer": "v5.1.0",
-        "symfony/http-foundation": "v2.4.2"
+        "predis/predis": "v0.8.5"
     },
 
     "archive": {
