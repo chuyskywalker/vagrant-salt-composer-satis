@@ -21,6 +21,10 @@ packages, it can take _quite_ some time.
 
 ## Notes/TODOs
 
+ - This satis config has "archive" turned on which means that it will build and 
+   store a copy of each package it hosts. You can thus use this setup if you wish
+   to make packages available in case github, or whatever, is offline etc. You can
+   disable this behavior by removing the "archive" section in the JSON config.
  - No CRON'ed satis (re)build calls
  - Totes' not safe for a real production deployment (Vagrant boxes come with a 
    publicly known SSH keypair.)
