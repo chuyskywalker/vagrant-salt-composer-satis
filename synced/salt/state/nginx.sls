@@ -4,6 +4,10 @@ nginx:
   service:
     - running
     - enable: True
+    - watch:
+      - pkg: nginx
+      - file: /etc/nginx/nginx.conf
+      - file: /etc/nginx/conf.d/satis.conf
 
 {# Remove default config #}
 {% for filename in ('default', 'example_ssl', 'ssl', 'virtual') %}
