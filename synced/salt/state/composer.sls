@@ -16,4 +16,4 @@ composer-config:
     - mode: 440
     - source: salt://files/composer-global
     - require:
-      - pkg: composer
+      - cmd: composer
