@@ -6,6 +6,7 @@ composer:
     - require:
       - pkg: php
 
+{# The global composer config -- will have your github auth token so Satic can make more than 60 requests per hour #}
 composer-config:
   file:
     - managed
