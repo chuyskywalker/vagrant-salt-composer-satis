@@ -1,13 +1,16 @@
 nginx:
   pkg:
-    - installed
+    - latest
   service:
     - running
     - enable: True
-    - watch:
+    - require:
       - pkg: nginx
       - file: /etc/nginx/nginx.conf
       - file: /etc/nginx/conf.d/satis.conf
+{% for filename in ('default', 'example_ssl', 'ssl', 'virtual') %}
+      - file: /etc/nginx/conf.d/{{ filename }}.conf
+{% endfor %}
 
 {# Remove default config #}
 {% for filename in ('default', 'example_ssl', 'ssl', 'virtual') %}
