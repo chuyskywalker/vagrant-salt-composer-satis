@@ -1,0 +1,10 @@
+# satis directory host, default machine
+
+server {
+    listen       80;
+    server_name  _;
+    location / {
+        root   /var/www/satis;
+        index  index.html index.htm;
+    }
+}

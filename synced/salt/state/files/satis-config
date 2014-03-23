@@ -1,0 +1,21 @@
+{
+
+    "name": "{{ grains['host'] }} Satis",
+    "homepage": "http://{{ grains['ip_interfaces']['eth1'][0] }}",
+ 
+    "repositories": [
+        { "type": "composer", "url": "https://packagist.org" }
+    ],
+
+    "require": {
+        "symfony/symfony": "~2.4.0"
+    },
+
+    "archive": {
+        "directory": "dist",
+        "skip-dev": true
+    },
+    
+    "require-dependencies": true,
+
+}

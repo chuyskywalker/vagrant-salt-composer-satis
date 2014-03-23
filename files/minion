@@ -1,0 +1,11 @@
+
+# Masterless salt install, with a different file root, and pillar support
+
+master: localhost
+file_client: local
+file_roots:
+  base:
+    - /synced/salt/state
+pillar_roots:
+  base:
+    - /synced/salt/pillar
