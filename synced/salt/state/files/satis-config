@@ -8,7 +8,9 @@
     ],
 
     "require": {
-        "symfony/symfony": "~2.4.0"
+        "psr/log": "1.0.0",
+        "swiftmailer/swiftmailer": "v5.1.0",
+        "symfony/http-foundation": "v2.4.2"
     },
 
     "archive": {
@@ -16,6 +18,6 @@
         "skip-dev": true
     },
     
-    "require-dependencies": true,
+    "require-dependencies": true
 
 }
