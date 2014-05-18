@@ -5,12 +5,12 @@ mirror up-and-running using [Vagrant](http://www.vagrantup.com/) & [Salt](http:/
 
 ## Install
 
-Install Vagrant
-Clone the repo
-Get a "[personal access token](https://github.com/settings/applications)" for github 
-Follow instructions in the `github-token-example.sls` file
-`vagrant up`
-Browse to http://192.168.56.10/
+1. Install Vagrant
+1. Clone the repo
+1. Get a "[personal access token](https://github.com/settings/applications)" for github 
+1. Follow instructions in the `github-token-example.sls` file
+1. `vagrant up`
+1. Browse to http://192.168.56.10/
 
 ## Modifying
 
